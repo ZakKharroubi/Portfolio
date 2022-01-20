@@ -1,0 +1,407 @@
+/* CSS GLOBAL */
+
+h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background-color: rgb(124, 40, 99);
+  padding: 10px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(83, 3, 59);
+}
+
+.container {
+  max-width: 1060px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* CSS PAR SECTION */
+
+/* HEADER */
+.burger {
+  display: none;
+}
+header {
+  background-image: linear-gradient(
+      to left,
+      rgb(12, 12, 12, 0.3) 55%,
+      rgb(238, 51, 229, 0.3)
+    ),
+    url(img/fitness.jpg);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+header nav img {
+  height: 60px;
+}
+header div {
+  margin: 150px 0 200px;
+}
+
+/* FIN DU HEADER */
+
+/* DEBUT DE LA SECTION PROGRAMMES */
+
+#programmes {
+  margin-top: -80px;
+}
+
+#programmes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 80px;
+}
+#programmes h2 {
+  text-transform: uppercase;
+}
+#programmes div {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#programmes ul li h3 {
+  font-weight: 400;
+}
+#programmes ul li {
+  padding: 50px;
+  width: 50%;
+}
+#programmes ul li:first-of-type {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(img/fitnessman.jpg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+}
+#programmes ul li:last-of-type {
+  background-image: linear-gradient(
+      rgb(238, 51, 229, 0.3),
+      rgb(238, 51, 229, 0.3)
+    ),
+    url(img/fitnesswoman.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* FIN DE LA SECTION PROGRAMMES */
+
+/* DEBUT DE LA SECTION PROPS */
+
+#props ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  border-top: 1px solid lightgrey;
+}
+
+#props ul li {
+  padding: 50px 30px;
+  text-align: center;
+  width: 25%;
+}
+
+#props ul li:not(li:last-child) {
+  border-right: 1px solid lightgrey;
+}
+
+#props img {
+  width: 48px;
+}
+
+/* FIN DE LA SECTION PROPS */
+
+/* DEBUT DE LA SECTION INSCRIPTION */
+
+#inscription {
+  background-image: linear-gradient(
+      to right,
+      rgb(238, 51, 229, 0.1) 55%,
+      rgb(0, 0, 0) 45%
+    ),
+    url(img/crossfit.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0 100px;
+}
+
+#inscription div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#inscription article h2 {
+  margin-left: -100px;
+}
+
+#inscription article {
+  width: 40%;
+}
+
+/* FIN DE LA SECTION INSCRIPTION */
+
+/* DEBUT DE LA SECTION QUADRILLAGE */
+
+#quadrillage ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+}
+#quadrillage ul li {
+  width: calc(100% / 3);
+  padding: 40px;
+}
+#quadrillage ul li:nth-child(odd) {
+  background-color: rgba(211, 211, 211, 0.6);
+}
+#quadrillage ul li img {
+  height: 48px;
+}
+
+/* FIN DE LA SECTION QUADRILLAGE */
+
+/* DEBUT SECTION CARTE */
+
+iframe {
+  display: block;
+}
+
+/* DEBUT DE LA SECTION FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+  border-top: rgb(124, 40, 99) solid 10px;
+}
+
+footer > div.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer img {
+  height: 60px;
+}
+
+#footerleft {
+  text-align: end;
+  width: calc(100% / 3);
+}
+
+#footerleft i {
+  padding: 5px;
+}
+
+#footerright {
+  text-align: start;
+  width: calc(100% / 3);
+}
+
+#footerright i {
+  color: rgb(124, 40, 99);
+}
+
+footer h2,
+footer h5 {
+  text-transform: uppercase;
+}
+
+#footermid {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  z-index: 1;
+  margin: -80px 20px;
+  padding: 30px;
+  box-shadow: 3px 3px 3px 3px rgba(189, 189, 189, 0.3);
+  margin-bottom: auto;
+  width: 50%;
+}
+
+#footermid form {
+  flex-direction: column;
+  align-items: center;
+}
+#footermid ul li:not(li:last-of-type) {
+  margin-bottom: 40px;
+}
+
+#footermid input[type="text"],
+#footermid input[type="email"] {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+#footermid input[type="button"] {
+  padding: 20px;
+  border: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .burger {
+    display: none;
+  }
+  #programmes {
+    margin-top: 0;
+    width: 100%;
+  }
+  #programmes ul {
+    margin: 0;
+  }
+  #programmes ul li:first-of-type,
+  #programmes ul li:last-of-type {
+    width: 50%;
+  }
+
+  #quadrillage ul li {
+    width: 50%;
+  }
+  #quadrillage ul li:nth-child(odd) {
+    background-color: transparent;
+  }
+  #quadrillage ul li:nth-child(2),
+  #quadrillage ul li:nth-child(3),
+  #quadrillage ul li:nth-child(6) {
+    background-color: rgba(211, 211, 211, 0.6);
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+
+  #burger {
+    display: block;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 25px;
+  }
+  header nav #burger::before {
+    content: "\f0c9";
+  }
+
+  header nav #burger:checked::before {
+    content: "\f00d";
+  }
+  header nav ul {
+    transform-origin: top;
+    transform: scaleY(0);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 77px;
+    background-color: rgb(124, 40, 99);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  header nav ul li {
+    display: block;
+    padding: 30px 0;
+  }
+
+  header nav #burger:checked + ul {
+    transform: scaleY(1);
+  }
+
+  header nav {
+    background-color: rgb(124, 40, 99);
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0;
+    padding: 5px 15 px;
+  }
+
+  #programmes ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  #props ul {
+    flex-wrap: wrap;
+  }
+  #props ul li {
+    width: 50%;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  section#props ul li:nth-of-type(2) {
+    border-right: none;
+  }
+
+  #inscription {
+    background-image: none;
+    background-color: black;
+  }
+  #inscription div {
+    justify-content: center;
+    margin: 0;
+  }
+  #inscription article h2 {
+    margin-left: 0;
+  }
+  #quadrillage ul {
+    justify-content: center;
+  }
+  #quadrillage ul li {
+    width: 100%;
+    padding: 40px;
+  }
+
+  footer > div.container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footerleft {
+    text-align: center;
+  }
+  #footermid {
+    order: -1;
+  }
+}

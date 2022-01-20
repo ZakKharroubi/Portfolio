@@ -1,0 +1,19 @@
+.results {
+    text-align: center;
+}
+
+#round-winner {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#player-block {
+    border: 1px solid black;
+}
+
+#computer-block {
+    border: 1px solid black;
+}
+#versus {
+    font-size: 50px;
+}
